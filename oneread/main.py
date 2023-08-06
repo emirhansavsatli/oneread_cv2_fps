@@ -3,13 +3,13 @@ from oneread import ONE
 
 
 def main():
-    asd_instance = ONE("1", 2)
-    asd_instance1 = ONE("2", 3)
-    asd_instance2 = ONE("3", 30)
+    cam1 = ONE("1", 2)
+    cam2 = ONE("2", 3)
+    cam3 = ONE("3", 30)
 
-    thread = threading.Thread(target=asd_instance.CAPTURE)
-    thread1 = threading.Thread(target=asd_instance1.CAPTURE)
-    thread2 = threading.Thread(target=asd_instance2.CAPTURE)
+    thread = threading.Thread(target=cam1.CAPTURE)
+    thread1 = threading.Thread(target=cam2.CAPTURE)
+    thread2 = threading.Thread(target=cam3.CAPTURE)
 
 
     thread.start()
